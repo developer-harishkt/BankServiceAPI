@@ -21,11 +21,11 @@ A RESTful Service to provide the basic bank details.
 
 
 
-- To Get Bank Details for given name & city (Default Pagination Size : 5):
+- To Get Bank Details for given name & city (Default Pagination Size : 1):
 
     curl -H "Authorization: Bearer <Access Token>" "https://hk-bank-api-service.herokuapp.com/api/getBankDetails/?city=<city>&name=<name>"
 
 
     - To add limit & offset.
 
-    curl -H "Authorization: Bearer <Access Token>" "https://hk-bank-api-service.herokuapp.com/api/getBankDetails/?city=<city>&name=<name>&limit=5&offset=10"
+    curl -H "Authorization: Bearer <Access Token>" "https://hk-bank-api-service.herokuapp.com/api/getBankDetails/?city=<city>&name=<name>&limit=<limit>&offset=<offset>"
