@@ -17,7 +17,7 @@ A RESTful Service to provide the basic bank details.
 
 - To Get Bank Details for given IFSC:
 
-    curl -H "Authorization: Bearer <Access Token>" "https://hk-bank-api-service.herokuapp.com/api/getBankDetails/?ifsc=ABHY0065001"
+    curl -H "Authorization: Bearer <Access Token>" "https://hk-bank-api-service.herokuapp.com/api/getBankDetails/?ifsc=<ifsc>"
 
 
 
