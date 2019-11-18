@@ -83,8 +83,8 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME'),
         'USER' : os.environ.get('DB_USER'),
         'PASSWORD' : os.environ.get('DB_PASS'),
-        'HOST' : 'localhost',
-        'PORT' : '5432'
+        'HOST' : os.environ.get('HOST'),
+        'PORT' : os.environ.get('PORT')
     }
 }
 
@@ -110,7 +110,7 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,
 
-    'ALGORITHM': 'HS256',
+    'ALGORITHM': os.environ.get('ALGORITHM'),
     'SIGNING_KEY': SECRET_KEY,
     'VERIFYING_KEY': None,
     'AUDIENCE': None,
